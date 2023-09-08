@@ -1,1 +1,24 @@
 
+#display {
+    font-size:2em;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+button{
+    width:60px;
+    height: 60px;
+    font-size: 1.5em;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+button[id="Clear"], button[id="="] {
+    grid-column: span 4;
+}
