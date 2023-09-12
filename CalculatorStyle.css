@@ -1,24 +1,115 @@
 
-#display {
-    font-size:2em;
-    width: 100%;
+:root {
+    --background: #f6f6f6;
+    --font: #222;
+    --border: #333;
+    --screen: #eee;
+    --calculator: #aaa;
+    --btn: #eee;
+    --btn-hover: #ddd;
+    --btn-active: #ccc;
+}
+
+
+
+
+body {
+    background-color: var(--background);
+    color: var(--font);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    width: 400px;
+    border: 2px var(--border) solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--calculator);
+}
+
+.display {
+    padding: 10px 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: var(--screen);
     text-align: right;
+    font-size: 2em;
+}
+.top-buttons {
+    display:flex;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
+#clear, #deleteBtn {
+    flex: 1;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
 button{
-    width:60px;
-    height: 60px;
-    font-size: 1.5em;
+padding: 20px;
+border: 2px var(--border) solid;
+border-radius: 5px;
+background-color: var(--btn);
+font-size: 1.5em;
+cursor: pointer;
 }
 
-body{
+button:hover{
+    background-color: var(--btn-hover);
+}
+
+button:active{
+    background-color: var(--btn-active);
+}
+
+
+.buttons-wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 60px);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-    justify-content: center;
 }
 
-button[id="Clear"], button[id="="] {
-    grid-column: span 4;
+
+.btn {
+    padding: 20px;
+    border: 2px var(--border) solid;
+    border-radius: 5px;
+    background-color: var(--btn);
+    font-size: 1.5em;
+    cursor: pointer;
 }
+
+.btn:hover {
+background-color: var(--btn-hover);
+}
+
+.btn:active {
+    background-color: var(--btn-active);
+}
+
+#previousOperationScreen {
+    font-size: smaller;
+    color: grey;
+}
+
+
+
+
+
+
+
+

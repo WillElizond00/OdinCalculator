@@ -7,31 +7,49 @@
     <link rel="stylesheet" type="text/css" href="CalculatorStyle.css">
 </head>
 <body>
-    <input id="input"></input>
-    <button id="0">0</button>
-    <button id="1">1</button>
-    <button id="2">2</button>
-    <button id="3">3</button>
-    <button id="4">4</button>
-    <button id="5">5</button>
-    <button id="6">6</button>
-    <button id="7">7</button>
-    <button id="8">8</button>
-    <button id="9">9</button>
+    
+    <div class="calculator">
 
+        <div class="display" id="previousOperationScreen"></div>
+        <div class="display" id="currentOperationScreen">0</div>
 
-    <button id="add" >+</button>
-    <button id="subtract">-</button>
-    <button id="multiply">*</button>
-    <button id="divide">/</button>
-    <button id="equals">=</button>
+        <div class="utilBtns">
+            <div class="top-buttons"> 
+            <button id="clear">Clear</button>
+            <button id="deleteBtn">Del</button>
+        </div>
+    </div>
 
-    <button id="clear">Clear</button>
+    <div class="buttons-wrapper">
+       
+            <button data-number class="btn" id="1">1</button>
+            <button data-number class="btn" id="2">2</button>
+    <button data-number class="btn" id="3">3</button>
+    <button data-number class="btn" id="4">4</button>
+    <button data-number class="btn" id="5">5</button>
+    <button data-number class="btn" id="6">6</button>
+    <button data-number class="btn" id="7">7</button>
+    <button data-number class="btn" id="8">8</button>
+    <button data-number class="btn" id="9">9</button>
+    <button data-number class="btn" id="0">0</button>
     <button id="decimal">.</button>
+    
+    <button data-operator class="btn" id="add" >+</button>
+    <button data-operator class="btn" id="subtract">-</button>
+    <button data-operator class="btn" id="multiply">*</button>
+    <button data-operator class="btn" id="divide">/</button>
+    <button data-operator class="btn" id="equals">=</button>
+</div>
+
 
 
 
 
     <script src="CalculatorLogic.js"></script>
+
+
+    </div>
+
+
 </body>
 </html>
